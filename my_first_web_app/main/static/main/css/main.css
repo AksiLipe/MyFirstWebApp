@@ -1,0 +1,79 @@
+body {
+    background: #2c2c2c; /*Поменять у всего сайта задний фон*/
+}
+
+aside {
+    float: left; /*Расположение данного блока*/
+    background: #181818; /*Меняем его цвет*/
+    width: 20%; /*Ширину выставляем 20% от всего экрана*/
+    padding: 2.5%; /*Отступы внутри блока*/
+    height: 100vh; /*Растянуть высоту на весь экран*/
+    color: #ffffff; /*Определить цвет текста внутри блока*/
+    border-right: 2px solid #707070; /*Обводка с правой стороны*/
+}
+
+aside img {
+    width: 80px; /*Размер фотографии в блоке aside*/
+    float: left;/*Расположение слева*/
+    border-radius: 50%; /*делаем рамку круглой*/
+}
+
+aside .logo {
+    font-size:35px; /*Размер шрифта*/
+    margin-left: 10px; /*Отступ с левой стороны*/
+    font-weight: bold; /*Жирность шрифта*/
+    position: relative; /*Даём понять что двигать будем относительно его настоящего расположения*/
+    top: 10px /*Поднять вверх(-) или вниз(+)*/
+}
+
+aside h3 {
+    margin-top: 50px; /*Отступ сверху*/
+    font-size: 28px; /*Размер*/
+}
+
+aside ul {list-style: none} /*Убрать у списка точки*/
+
+aside ul li {
+    color: #b0b0b0; /*Цвет иконок и шрифта будет белый*/
+    display: block; /*Сделаем их блочными*/
+    margin-top: 30px; /*Отступ сверху*/
+    transition: transform .3s ease;
+}
+
+aside ul li:hover, aside ul a:hover { /*У нас тэги li находятся в тэге a*/
+    color: #00b9b4; /*Цвет текста*/
+    text-decoration: none; /*Убрать подчёркивание*/
+    transform: scale(1.1); /*Увеличение при наведении*/
+}
+
+main .features {
+    float: left; /*Чтобы позиционировался слева*/
+    color: white; /*Цвет шрифта белый*/
+    margin-top: 100px; /*Отступ сверху*/
+    text-align: center; /*Текст по центру*/
+    width: 80%; /*Ширина 80%*/
+}
+
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin: 20px auto;}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 36.7%;
+    text-align: center;
+}
+
+.btn-rounded {
+    border-radius: 19px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
